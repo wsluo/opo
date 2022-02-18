@@ -3,7 +3,7 @@ import sys
 import fileinput
 
 if len(sys.argv) != 2:
-	print "need id!"
+	print("need id!")
 	sys.exit()
 
 m_id = int(sys.argv[1])
@@ -25,9 +25,9 @@ for line in fileinput.input("../../dev/cc2538-rf-debug/cc2538-rf-debug.c", inpla
 fileinput.close()
 
 m = sh.make("opo8001rxtx.upload")
-print m
-print m.stdout
-print m.stderr
+print(m)
+print(m.stdout)
+print(m.stderr)
 
 
 for line in fileinput.input("../../dev/opo/opo.c", inplace=1):

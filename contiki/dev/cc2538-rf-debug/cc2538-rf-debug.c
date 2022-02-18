@@ -15,6 +15,7 @@ static void rf_debug_callback() { debug_clear = true; }
 #define RF_DEBUG_ID 0
 #endif
 
+
 void send_rf_debug_msg(char msg[]) {
     #if CC2538_RF_PRINT
     if(debug_clear) {

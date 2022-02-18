@@ -290,7 +290,7 @@ PROCESS_THREAD(cloudcomm_manager, ev, data) {
 	while(1) {
 		PROCESS_YIELD_UNTIL(ev == PROCESS_EVENT_POLL);
 		cancel_vtimer(&cc_rf_retransmit_vtimer);
-		if(cc_on) {
+		if(0){//(cc_on) {
 			/* Get the time */
 			if(req_count > 0) {
 				send_rf_debug_msg("CC_MAN: Get time");

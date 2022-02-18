@@ -6,6 +6,6 @@ TARGETDIRS += ../../platform
 
 SMALL = 0
 
-CONTIKI = $(HOME)/Dropbox/git/contiki
+CONTIKI = $(HOME)/contiki
 include $(CONTIKI)/Makefile.include
 CFLAGS += -DCC2538_RF_PRINT=1
